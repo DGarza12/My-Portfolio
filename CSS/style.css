@@ -1,3 +1,5 @@
+// Si estas usando VS code, intenta formatear el documento. Me parece que el comando debe ser shift + alt + f.
+
 body {
     color: #419787;
     margin: 0;
@@ -36,6 +38,7 @@ body {
     text-decoration: underline;
   }
 
+  // Buen uso de position: abosulte!!
   .top-img {
     position: absolute;
     right: 100px;
@@ -48,6 +51,7 @@ body {
     bottom: 100px;
   }
 
+  // Intenta usar nombres descriptivos para tus clases. Evita nombres como btn, img
   .bottom-img2{
     margin-top: 50px;
   }
@@ -66,6 +70,7 @@ body {
     margin: auto;
   }
 
+  // Buen diseño para el separador!
   hr {
     border: dotted #eaf6f6 6px;
     border-bottom: none;
@@ -90,10 +95,13 @@ body {
 
   .skill-row {
     width: 50%;
+    // En este caso puedes simplificarlo a margin: 100px auto
     margin: 100px auto 100px auto;
     text-align: left;
   }
 
+  // No estoy muy familiarizado con css grid, pero en este caso yo recomendaria usar flex box para poder alinear las imagenes y el texto sin necesidad the configurar el grid y cada uno de los elementos
+  // Tambien recomiendo usar un div con background para las imagenes en vez de usar <img>
   .parent {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
